@@ -7,7 +7,7 @@ import ohm.softa.a05.model.PlantColor;
 
 public class PlantBedUtils {
 
-    public <T extends Plant> void repot(PlantBed<T> from, PlantColor color, PlantBed<T> to) {
+    public static <T extends Plant> void repot(PlantBed<T> from, PlantColor color, PlantBed<? super T> to) {
         SimpleList<T> plants_to_repot = from.getPlantsByColor(color);
         plants_to_repot.forEach(plant -> {
 //            from.remove(plant); // todo

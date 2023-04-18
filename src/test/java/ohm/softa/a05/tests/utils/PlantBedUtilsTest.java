@@ -25,8 +25,7 @@ public class PlantBedUtilsTest {
         Shrub not_red2 = new Shrub(4, "family4", "name4");
         from.add(not_red2);
 
-        PlantBedUtils objectUnderTest = new PlantBedUtils();
-        objectUnderTest.repot(from, PlantColor.RED, to);
+        PlantBedUtils.repot(from, PlantColor.RED, to);
 
         PlantBed<Plant> to_expected = new PlantBed<>();
         to_expected.add(red1);
