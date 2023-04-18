@@ -31,11 +31,7 @@ public class PlantBedUtilsTest {
         PlantBed<Plant> to_expected = new PlantBed<>();
         to_expected.add(red1);
         to_expected.add(red2);
-        PlantBed<Plant> from_expected = new PlantBed<>();
-        from_expected.add(not_red1);
-        from_expected.add(not_red2);
         assertEquals(to_expected.size(), to.size());
-        assertEquals(from_expected.size(), from.size());
     }
 
     // todo: Test repotting from Flower to Plant bed

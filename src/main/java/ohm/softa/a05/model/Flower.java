@@ -18,22 +18,6 @@ public class Flower extends Plant {
         return color;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Flower flower = (Flower) o;
-        return (this.getColor() == flower.getColor())
-                && (this.getFamily().equals(flower.getFamily()))
-                && (this.getHeight() == flower.getHeight())
-                && (this.getName().equals(flower.getName()));
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(this.getColor(), this.getFamily(), this.getHeight(), this.getName());
-    }
-
 
     @Override
     public String toString() {
