@@ -15,7 +15,7 @@ public class PlantBedTest {
 
     @Test
     public void testAddToPlantBed() throws Exception {
-        PlantBed objectUnderTest = new PlantBed();
+        PlantBed<Plant> objectUnderTest = new PlantBed<>();
 
         objectUnderTest.add(new Flower(1, "family", "name", PlantColor.RED));
         objectUnderTest.add(new Flower(1, "family", "name", PlantColor.BLUE));
@@ -26,7 +26,7 @@ public class PlantBedTest {
 
     @Test
     public void testGetRedPlantsShouldReturnOnlyRedPlants() throws Exception {
-        PlantBed objectUnderTest = new PlantBed();
+        PlantBed<Plant> objectUnderTest = new PlantBed<>();
         Flower red1 = new Flower(1, "family", "name", PlantColor.RED);
         objectUnderTest.add(red1);
         Flower red2 = new Flower(2, "family", "othername", PlantColor.RED);
